@@ -1,69 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template VentaLista | Compra Informada</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sérum Antiacné - LUMERA Skin</title>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    background: white;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.section {
+    padding: 16px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.box {
+    background: #f1f1f1;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* CTA FIJO */
+#cta-fijo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #25D366;
+    text-align: center;
+    padding: 12px;
+    z-index: 999;
+}
+
+#cta-fijo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-900">
 
-    <nav class="p-4 bg-white border-b flex justify-between items-center">
-        <span class="font-bold text-lg tracking-tighter">VENTALISTA</span>
-        <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full font-bold">MODELO: COMPRA INFORMADA</span>
-    </nav>
+<body>
 
-    <header class="p-6 bg-white">
-        <h1 class="text-2xl font-black leading-tight text-indigo-900">
-            Aquí va tu promesa de valor: Lo que tu cliente logra con tu producto.
-        </h1>
-        <p class="mt-2 text-slate-500 text-sm italic">
-            *Este bloque elimina la duda inicial. El cliente entiende en 3 segundos qué vendes.*
-        </p>
-    </header>
+<div class="container">
 
-    <section class="px-6 py-4">
-        <div class="aspect-square w-full bg-slate-200 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-300">
-            <p class="text-slate-400 font-medium text-center px-10">Imagen Real de tu Producto<br><span class="text-xs">(Sin distracciones, foco total)</span></p>
-        </div>
-    </section>
+<!-- HERO -->
+<img src="producto.jpg" alt="Sérum Antiacné">
 
-    <section class="p-6">
-        <div class="bg-indigo-900 text-white p-6 rounded-2xl shadow-xl">
-            <h2 class="font-bold text-lg mb-4">¿Para quién es este catálogo?</h2>
-            <div class="space-y-4">
-                <div class="flex gap-3">
-                    <span class="text-indigo-400">✔</span>
-                    <p class="text-sm"><strong>Para negocios con dudas técnicas:</strong> Si tu cliente pregunta mucho antes de pagar, esta estructura responde por ti.</p>
-                </div>
-                <div class="flex gap-3">
-                    <span class="text-indigo-400">✔</span>
-                    <p class="text-sm"><strong>Para vender confianza:</strong> Aquí colocamos los beneficios que validan tu precio.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="section">
+    <h1>Sérum Antiacné Control Total</h1>
+    <p><strong>Reduce brotes sin resecar tu piel</strong></p>
+    <p>Ideal para piel grasa o mixta con acné recurrente</p>
+</div>
 
-    <section class="p-6 space-y-6">
-        <div>
-            <h3 class="font-bold text-slate-800 uppercase text-xs tracking-widest mb-2">Especificaciones de Valor</h3>
-            <div class="border-l-4 border-indigo-500 pl-4 py-1">
-                <p class="text-sm font-bold">Diferencial Único</p>
-                <p class="text-xs text-slate-500">Aquí el cliente llena los datos de su formulario para demostrar por qué es mejor que la competencia.</p>
-            </div>
-        </div>
-    </section>
+<!-- IMAGEN DEMOSTRACIÓN -->
+<img src="piel.jpg" alt="Resultado en piel">
 
-    <footer class="fixed bottom-0 w-full bg-white p-4 border-t flex items-center gap-4">
-        <div class="flex-1">
-            <span class="block text-[10px] uppercase text-slate-400 font-bold tracking-tighter">Inversión</span>
-            <span class="text-xl font-black text-slate-900">S/ 00.00</span>
-        </div>
-        <button class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold text-sm uppercase tracking-wider">
-            Pedir por WhatsApp
-        </button>
-    </footer>
+<!-- ¿ES PARA TI? -->
+<div class="section">
+    <h2>¿Es para ti?</h2>
 
-    <div class="h-20"></div>
+    <div class="box">
+        <p>✔ Tienes acné leve o moderado</p>
+        <p>✔ Tu piel es grasa o mixta</p>
+        <p>✔ Buscas controlar brotes sin irritar</p>
+    </div>
+
+    <div class="box">
+        <p>✖ Buscas resultados en 1 día</p>
+        <p>✖ Tienes acné severo (requiere tratamiento médico)</p>
+    </div>
+</div>
+
+<!-- BENEFICIOS -->
+<div class="section">
+    <h2>¿Qué puedes esperar?</h2>
+    <p>• Disminución progresiva de brotes</p>
+    <p>• Control del exceso de grasa</p>
+    <p>• Piel más uniforme y saludable</p>
+</div>
+
+<!-- FORMA DE USO -->
+<div class="section">
+    <h2>¿Cómo se usa?</h2>
+
+    <div class="box">
+        <p>1. Limpia tu rostro</p>
+        <p>2. Aplica 2 a 3 gotas sobre la piel seca</p>
+        <p>3. Distribuye suavemente en zonas con acné</p>
+        <p>4. Úsalo 2 veces al día (mañana y noche)</p>
+    </div>
+
+    <p style="font-size:13px; margin-top:10px;">
+        Uso constante recomendado para mejores resultados
+    </p>
+</div>
+
+<!-- VALIDACIÓN -->
+<div class="section">
+    <div class="box">
+        <p><strong>Más de 300 personas lo usan en su rutina diaria</strong></p>
+    </div>
+</div>
+
+<!-- FICHA TÉCNICA -->
+<div class="section">
+    <h2>Detalles</h2>
+    <p>Contenido: 30 ml</p>
+    <p>Ingredientes: ácido salicílico + niacinamida</p>
+    <p>Uso: 2 veces al día</p>
+    <p>Apto para uso diario</p>
+</div>
+
+<!-- OPCIÓN PRINCIPAL -->
+<div class="section">
+    <h2>Empieza tu tratamiento</h2>
+
+    <div class="box" style="border:2px solid #25D366; background:#f6fff8;">
+        <p><strong>Pack 2 Sérums (Más recomendado)</strong></p>
+        <div class="price">S/ 140</div>
+
+        <p style="color:#25D366; font-size:14px;"><strong>Ahorra S/ 18</strong></p>
+        <p style="font-size:13px;">Tratamiento completo para 60 días</p>
+
+        <a class="button"
+        href="https://wa.me/51990582170?text=Hola,%20quiero%20empezar%20con%20el%20pack%20de%202%20serums"
+        target="_blank">
+        Empezar con el pack
+        </a>
+    </div>
+</div>
+
+<!-- OPCIÓN SECUNDARIA -->
+<div class="section">
+    <div class="box">
+        <p><strong>¿Prefieres probar primero?</strong></p>
+        <p>1 Sérum (30 ml)</p>
+        <div class="price">S/ 79</div>
+
+        <a class="button" style="background:#333;"
+        href="https://wa.me/51990582170?text=Hola,%20quiero%20probar%201%20serum%20antiacn%C3%A9"
+        target="_blank">
+        Probar 1 unidad
+        </a>
+    </div>
+</div>
+
+<!-- RECOMPRA DISCRETA -->
+<div class="section" style="text-align:center;">
+    <p style="font-size:13px; color:#666;">
+        ¿Ya usaste este producto?
+    </p>
+
+    <a href="https://wa.me/51990582170?text=Hola,%20quiero%20repetir%20mi%20pedido"
+    style="font-size:13px; color:#25D366; text-decoration:none;">
+        Reordenar en 1 clic
+    </a>
+</div>
+
+<!-- ESPACIADOR -->
+<div style="height:80px;"></div>
+
+</div>
+
+<!-- CTA FIJO -->
+<div id="cta-fijo">
+    <a href="https://wa.me/51990582170?text=Hola,%20quiero%20el%20pack%20de%202%20serums">
+        Pedir pack recomendado
+    </a>
+</div>
+
 </body>
 </html>
